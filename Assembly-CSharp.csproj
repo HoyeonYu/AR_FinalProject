@@ -53,6 +53,7 @@
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GameDirector.cs" />
     <Compile Include="Assets\Scripts\PresentCtrl.cs" />
     <Compile Include="Assets\Scripts\PresentGenerator.cs" />
     <Compile Include="Assets\Scripts\SantaCtrl.cs" />

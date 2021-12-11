@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ThiefCtrl : MonoBehaviour
 {
-    public static float speed = 0.01f;
+    public static float speed = 0.01f, presentDistance = 0f;
+    public static int score = 0;
+    public static bool isWin = false;
     Animator animator;
 
     void Start()
@@ -14,6 +16,7 @@ public class ThiefCtrl : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector3.right * speed);
@@ -32,11 +35,35 @@ public class ThiefCtrl : MonoBehaviour
             animator.SetBool("isJump", false);
         }
 
+        else if (isWin)
+        {
+            score++;
+            isWin = false;
+
+            animator.SetBool("isIdle", false);
+            animator.SetBool("isRun", false);
+            animator.SetBool("isJump", true);
+
+            Debug.Log("thief score" + score);
+        }
+
         else
         {
             animator.SetBool("isIdle", true);
             animator.SetBool("isRun", false);
             animator.SetBool("isJump", false);
+        }
+
+        GameObject present = GameObject.FindGameObjectWithTag("Present");
+
+        if (present != null)
+        {
+            presentDistance = Vector3.Distance(transform.position, present.transform.position);
+        }
+
+        else
+        {
+            presentDistance = 0f;
         }
     }
 }
