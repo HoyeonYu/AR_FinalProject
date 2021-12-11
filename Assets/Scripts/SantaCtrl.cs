@@ -8,10 +8,13 @@ public class SantaCtrl : MonoBehaviour
     public static int score = 0;
     public static bool isWin = false;
     Animator animator;
+    AudioSource audioSource;
+    public AudioClip audioClip;
 
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
@@ -39,6 +42,7 @@ public class SantaCtrl : MonoBehaviour
         {
             score++;
             isWin = false;
+            audioSource.PlayOneShot(audioClip);
 
             animator.SetBool("isIdle", false);
             animator.SetBool("isRun", false);
