@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 434624}
   - component: {fileID: 3346376}
   - component: {fileID: 2355894}
+  - component: {fileID: 4707179517281229969}
   - component: {fileID: 6473850}
   m_Layer: 0
   m_Name: Present_Box_Color_37
@@ -81,6 +82,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4707179517281229969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb96cd667ad01134e8ecc882e8387db5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &6473850
 MeshCollider:
   m_ObjectHideFlags: 0

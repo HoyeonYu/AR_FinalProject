@@ -53,13 +53,16 @@
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PresentCtrl.cs" />
+    <Compile Include="Assets\Scripts\PresentGenerator.cs" />
     <Compile Include="Assets\Scripts\SantaCtrl.cs" />
     <Compile Include="Assets\Scripts\ThiefCtrl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DownloadAssets\Meshtint Free Santa Claus\Read me.txt" />
     <None Include="Assets\DownloadAssets\Meshtint Free Santa Claus\www.meshtint.com.txt" />
-    <None Include="Assets\ARSettings\StreamingAssets\Vuforia\ChristmasContents_DB.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\ChristmasContents_DB.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
