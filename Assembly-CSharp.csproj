@@ -59,7 +59,7 @@
   <ItemGroup>
     <None Include="Assets\DownloadAssets\Meshtint Free Santa Claus\Read me.txt" />
     <None Include="Assets\DownloadAssets\Meshtint Free Santa Claus\www.meshtint.com.txt" />
-    <None Include="Assets\StreamingAssets\Vuforia\ChristmasContents_DB.xml" />
+    <None Include="Assets\ARSettings\StreamingAssets\Vuforia\ChristmasContents_DB.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
